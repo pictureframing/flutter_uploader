@@ -1,6 +1,7 @@
 part of flutter_uploader;
 
 /// A class defines a set of possible statuses of a upload task
+@pragma('vm:entry-point')
 class UploadTaskStatus extends Equatable {
   final int? _value;
 

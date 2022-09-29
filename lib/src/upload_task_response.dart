@@ -2,6 +2,7 @@ part of flutter_uploader;
 
 /// Contains information about a enqueue or finished/failed upload.
 /// For in-flight information, see the [UploadTaskProgress] class.
+@pragma('vm:entry-point')
 class UploadTaskResponse extends Equatable {
   /// Upload Task ID.
   final String taskId;

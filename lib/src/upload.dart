@@ -32,6 +32,7 @@ abstract class Upload {
 /// Standard RFC 2388 multipart/form-data upload.
 ///
 /// The platform will generate the boundaries and accompanying information.
+@pragma('vm:entry-point')
 class MultipartFormDataUpload extends Upload {
   /// Default constructor which requires either files or data to be set.
   MultipartFormDataUpload({
@@ -62,6 +63,7 @@ class MultipartFormDataUpload extends Upload {
 }
 
 /// Also called a binary upload, this represents a upload without any form-encoding applies.
+@pragma('vm:entry-point')
 class RawUpload extends Upload {
   /// Default constructor.
   const RawUpload({

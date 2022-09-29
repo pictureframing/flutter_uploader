@@ -2,6 +2,7 @@ part of flutter_uploader;
 
 /// Contains in-flight progress information. For finished uploads, refer to the
 /// [UploadTaskResponse] class.
+@pragma('vm:entry-point')
 class UploadTaskProgress extends Equatable {
   /// Upload Task ID.
   final String taskId;
